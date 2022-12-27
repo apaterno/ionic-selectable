@@ -1521,6 +1521,8 @@ export class IonicSelectableComponent implements ControlValueAccessor, OnInit, D
       const modalOptions: ModalOptions = {
         component: IonicSelectableModalComponent,
         componentProps: { selectComponent: self },
+        breakpoints: [0, 0.8, 1],
+        initialBreakpoint: 0.8,
         backdropDismiss: self._shouldBackdropClose
       };
 
